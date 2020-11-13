@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <param name="/use_sim_time" value="true" />
+
+  <include file="$(find gazebo_ros)/launch/willowgarage_world.launch"/>
+  <arg name="model" value="$(find wally_description)/urdf/wally.xacro"/>
+  <param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node>
+  
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen" >
+    <param name="publish_frequency" type="double" value="50.0" />
+  </node>
+
+  <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" args="-urdf -model wally -param robot_description -z 0.05" respawn="false" output="screen" />
+
+  <node name="rviz" pkg="rviz" type="rviz"/>
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping">
+    <arg name="scan" value="$/scan"/>
+  </node>
+
+</launch>
+
