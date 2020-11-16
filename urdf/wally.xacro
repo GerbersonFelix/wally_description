@@ -6,8 +6,8 @@
 
   <link name="base_link">
     <inertial>
-      <origin xyz="-0.0083636 0.0065553 0.033694" rpy="0 0 0" />
-      <mass value="1.4521" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="1.5" />
       <inertia ixx="0.0040255" ixy="-2.6373E-06" ixz="6.2085E-08" iyy="0.0046487" iyz="-1.1645E-06" izz="0.0086266" />
     </inertial>
     <visual>
