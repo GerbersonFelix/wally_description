@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <launch>
-  
+
+  <arg name="scan_topic"  default="scan" />
+  <arg name="base_frame"  default="base_link"/>
+  <arg name="odom_frame"  default="odom"/>  
+
   <param name="/use_sim_time" value="true" />
 
   <include file="$(find gazebo_ros)/launch/willowgarage_world.launch"/>
@@ -16,8 +20,45 @@
   <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" args="-urdf -model wally -param robot_description -z 0.05" respawn="false" output="screen" />
 
   <node name="rviz" pkg="rviz" type="rviz"/>
-  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping">
-    <arg name="scan" value="$/scan"/>
+
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+    <param name="base_frame" value="$(arg base_frame)"/>
+    <param name="odom_frame" value="$(arg odom_frame)"/>
+    <remap from="scan" to="$(arg scan_topic)"/>
+
+    <param name="map_update_interval" value="2.0"/>
+    <param name="maxUrange" value="10.0"/>
+    <param name="maxRange" value="10.0"/>
+    <param name="sigma" value="0.05"/>
+    <param name="kernelSize" value="1"/>
+    <param name="lstep" value="0.05"/>
+    <param name="astep" value="0.05"/>
+    <param name="iterations" value="5"/>
+    <param name="lsigma" value="0.075"/>
+    <param name="ogain" value="3.0"/>
+    <param name="lskip" value="10"/>
+    <param name="minimumScore" value="700"/>
+    <param name="srr" value="0.01"/>
+    <param name="srt" value="0.02"/>
+    <param name="str" value="0.01"/>
+    <param name="stt" value="0.02"/>
+    <param name="linearUpdate" value="0.1"/>
+    <param name="angularUpdate" value="0.1"/>
+    <param name="temporalUpdate" value="-1.0"/>
+    <param name="resampleThreshold" value="0.5"/>
+    <param name="particles" value="150"/>
+
+    <param name="xmin" value="-10.0"/>
+    <param name="ymin" value="-10.0"/>
+    <param name="xmax" value="10.0"/>
+    <param name="ymax" value="10.0"/>
+
+    <param name="delta" value="0.025"/>
+    <param name="llsamplerange" value="0.01"/>
+    <param name="llsamplestep" value="0.01"/>
+    <param name="lasamplerange" value="0.005"/>
+    <param name="lasamplestep" value="0.005"/>
+
   </node>
 
 </launch>
