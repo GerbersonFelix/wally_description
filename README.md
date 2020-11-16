@@ -24,9 +24,9 @@ $ sudo apt-get install ros-kinetic-navigation
 ##### 2. Criando o catking workspace:
 
 ```sh
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
-catkin_init_workspace
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/src
+$ catkin_init_workspace
 ```
 
 ##### 3. Faça o download deste pacote para a pasta src do seu catkin workspace:
