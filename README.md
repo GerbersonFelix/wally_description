@@ -4,7 +4,7 @@
 Este pacote se trata da versão vitual do robô Wally
 
 <p align="center">
-    <img src="./figs/Wally.png" width="600" height="360" title="Wally Robot">
+    <img src="./figs/WALLY_FINAL.png" width="600" height="360" title="Wally Robot">
 </p> 
 
 ## Instruções
