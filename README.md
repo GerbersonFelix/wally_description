@@ -37,11 +37,10 @@ $ cd ..
 $ catkin_make
 ```
 
-##### 4. Descompacte os meshes
+##### 4. Faça o download dos meshes
 
-```sh
-$ cd ~/catkin_ws/src/wally_description/meshes
-$ unzip base_link.STL.zip && unzip rp_lidarA1.stl.zip
+```
+Os meshes estão na pasta "Arquivos_Wally_DAE". O nome do mesh pode variar de acordo com a versão do arquivo wally.xacro, então é recomendável fazer o download de todos e colocar na pasta "meshes".
 ```
 
 ##### 5. Abrindo o ambiente de simulação:
