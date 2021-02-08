@@ -1,35 +1,5 @@
 <?xml version="1.0"?>
 <robot>
-<!-- materials and gravity-->
-  <gazebo reference="motor_A">
-    <material>Gazebo/Blue</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-
-  <gazebo reference="motor_B">
-    <material>Gazebo/Blue</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-
-  <gazebo reference="motor_C">
-    <material>Gazebo/Blue</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-
-  <gazebo reference="motor_D">
-    <material>Gazebo/Blue</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-
-  <gazebo reference="RP_LIDAR">
-    <material>Gazebo/Black</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
-
-  <gazebo reference="ZED">
-    <material>Gazebo/Grey</material>
-    <turnGravityOff>false</turnGravityOff>
-  </gazebo>
 
   <!-- Lidar -->
   <gazebo reference="RP_LIDAR">
@@ -116,7 +86,7 @@
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
         <frameName>zed</frameName>
-        <!--<rightFrameName>right_camera_optical_frame</rightFrameName>-->
+        <!--rightFrameName>right_camera_optical_frame</rightFrameName-->
         <hackBaseline>0.0535</hackBaseline>
         <distortionK1>0.0</distortionK1>
         <distortionK2>0.0</distortionK2>
@@ -139,7 +109,7 @@
       <wheelSeparation>0.2792</wheelSeparation>
       <wheelDiameter>0.065</wheelDiameter>
       <robotBaseFrame>base_link</robotBaseFrame>
-      <torque>30</torque>
+      <torque>10</torque>
       <MaxForce>5.0</MaxForce>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
