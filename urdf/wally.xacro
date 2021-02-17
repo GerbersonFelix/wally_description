@@ -6,8 +6,8 @@
   <link name="base_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
-      <mass value="0.380" />
-      <inertia ixx="0.004708822" ixy="9.04E-07" ixz="0" iyy="0.004514873" iyz="0" izz="0.009096925" />
+      <mass value="4.380" />
+      <inertia ixx="0.000003" ixy="0" ixz="0" iyy="0.000003" iyz="0" izz="0.000005" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 1.57075" />
@@ -26,7 +26,7 @@
     <inertial>
       <origin xyz="0 0 0.06" rpy="0 0 0" />
       <mass value="0.380" />
-      <inertia ixx="0.004708822" ixy="9.04E-07" ixz="0" iyy="0.004514873" iyz="0" izz="0.009096925" />
+      <inertia ixx="0.000002" ixy="0" ixz="0" iyy="0.000002" iyz="0" izz="0.000003" />
     </inertial>
     <visual>
       <origin xyz="0 0 0.06" rpy="0 0 0" />
@@ -51,7 +51,7 @@
     <inertial>
       <origin xyz="0 0 0.119" rpy="0 0 0" />
       <mass value="0.095" />
-      <inertia ixx="0.000085867" ixy="0" ixz="0" iyy="0.000532995" iyz="0" izz="0.00061183" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
     <visual>
       <origin xyz="0 0 0.119" rpy="0 0 0" />
@@ -76,7 +76,7 @@
     <inertial>
       <origin xyz="0 -0.08935 0.076485" rpy="0 0 0" />
       <mass value="0.135" />
-      <inertia ixx="0.000021510" ixy="0" ixz="0" iyy="0.000366159" iyz="0" izz="0.000363493" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
     </inertial>
     <visual>
       <origin xyz="0 -0.08935 0.076485" rpy="0 0 0" />
@@ -101,10 +101,10 @@
     <inertial>
       <origin xyz="0 0 0.1205" rpy="0 0 0" />
       <mass value="0.170" />
-      <inertia ixx="0.000117046" ixy="-2.01E-07" ixz="-4.01E-07" iyy="0.000076301" iyz="0.000014883" izz="0.000082665" />
+      <inertia ixx="0.000117046" ixy="0" ixz="0" iyy="0.000076301" iyz="0" izz="0.000082665" />
     </inertial>
     <visual>
-      <origin xyz="0 0 0.1205" rpy="0 0 0" />
+      <origin xyz="0 0 -0.045" rpy="0 0 0" />
       <geometry>
 	<mesh filename="package://wally_description/meshes/RP_LIDAR.dae" />
       </geometry>
@@ -117,7 +117,7 @@
     </collision>
   </link>
   <joint name="lidar" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 1.57075" />
+    <origin xyz="0 0 0.1655" rpy="0 0 1.57075" />
     <parent link="base_link" />
     <child link="RP_LIDAR" />
     <axis xyz="0 0 1" />
@@ -126,7 +126,7 @@
     <inertial>
       <origin xyz="-0.11168 0 0.021875" rpy="0 0 3.1415" />
       <mass value="0.061" />
-      <inertia ixx="0.000034341" ixy="0" ixz="0" iyy="0.000020393" iyz="0" izz="0.000020401" />
+      <inertia ixx="0.002" ixy="0" ixz="0" iyy="0.002" iyz="0" izz="0.002" />
     </inertial>
     <visual>
       <origin xyz="-0.11168 0 0.021875" rpy="0 0 3.1415" />
@@ -151,7 +151,7 @@
     <inertial>
       <origin xyz="-0.11168 0 -0.021875" rpy="3.1415 0 3.1415" />
       <mass value="0.061" />
-      <inertia ixx="0.000034341" ixy="0" ixz="0" iyy="0.000020393" iyz="0" izz="0.000020401" />
+      <inertia ixx="0.002" ixy="0" ixz="0" iyy="0.002" iyz="0" izz="0.002" />
     </inertial>
     <visual>
       <origin xyz="-0.11168 0 -0.021875" rpy="3.1415 0 3.1415" />
@@ -176,7 +176,7 @@
     <inertial>
       <origin xyz="0.11168 0 0.021875" rpy="0 0 0" />
       <mass value="0.061" />
-      <inertia ixx="0.000034341" ixy="0" ixz="0" iyy="0.000020393" iyz="0" izz="0.000020401" />
+      <inertia ixx="0.002" ixy="0" ixz="0" iyy="0.002" iyz="0" izz="0.002" />
     </inertial>
     <visual>
       <origin xyz="0.11168 0 0.021875" rpy="0 0 0" />
@@ -201,7 +201,7 @@
     <inertial>
       <origin xyz="0.11168 0 -0.021875" rpy="3.1415 0 0" />
       <mass value="0.061" />
-      <inertia ixx="0.000034341" ixy="0" ixz="0" iyy="0.000020393" iyz="0" izz="0.000020401" />
+      <inertia ixx="0.002" ixy="0" ixz="0" iyy="0.002" iyz="0" izz="0.002" />
     </inertial>
     <visual>
       <origin xyz="0.11168 0 -0.021875" rpy="3.1415 0 0" />
@@ -221,5 +221,130 @@
     <parent link="base_link" />
     <child link="motor_D" />
     <axis xyz="0 1 0" />
+  </joint>
+    <link name="Arduino_Due">
+    <inertial>
+      <origin xyz="-0.0132 -0.04333 0.0053" rpy="0 0 1.57075" />
+      <mass value="0.035" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0.04333 -0.0132 0.0053" rpy="0 0 1.57075" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/ARDUINO_DUE.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0132 -0.04333 0.0053" rpy="0 0 1.57075" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/ARDUINO_DUE.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="arduino" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Arduino_Due" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <link name="Bateria">
+    <inertial>
+      <origin xyz="0 -0.108 0.0145" rpy="0 0 -1.57075" />
+      <mass value="0.45" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 -0.108 0.0145" rpy="0 0 -1.5707" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/BATERIA.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.108 0.0145" rpy="0 0 -1.57075" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/BATERIA.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="bateria" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 1.57075" />
+    <parent link="base_link" />
+    <child link="Bateria" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <link name="Hub_usb">
+    <inertial>
+      <origin xyz="0 0.0995 0.0115" rpy="0 0 1.57075" />
+      <mass value="0.03" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0.0995 0.0115" rpy="0 0 1.57075" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/HUB_USB.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0995 0.0115" rpy="0 0 1.57075" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/HUB_USB.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="hub" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Hub_usb" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <link name="Power_bank">
+    <inertial>
+      <origin xyz="-0.028 -0.002 0.013" rpy="0 3.1415 0" />
+      <mass value="0.6" />
+      <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0" iyz="0" izz="0.000001" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.028 -0.002 0.013" rpy="0 3.1415 0" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/POWER_BANK.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.028 -0.002 0.013" rpy="0 3.1415 0" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/POWER_BANK.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="power_bank" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Power_bank" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <link name="Jetson">
+    <inertial>
+      <origin xyz="-0.017 0 0.0625" rpy="0 0 0" />
+      <mass value="0.5" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.017 0 0.0625" rpy="0 0 0" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/JETSON.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.017 0 0.0625" rpy="0 0 0" />
+      <geometry>
+	<mesh filename="package://wally_description/meshes/JETSON.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="jetson" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Jetson" />
+    <axis xyz="0 0 1" />
   </joint>
 </robot>

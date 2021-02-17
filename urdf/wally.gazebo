@@ -4,7 +4,7 @@
   <!-- Lidar -->
   <gazebo reference="RP_LIDAR">
     <sensor type="ray" name="head_hokuyo_sensor">
-      <pose>0 0 0 0 0 0</pose>
+      <pose>0 0 0.1205 0 0 0</pose>
       <visualize>false</visualize>
       <update_rate>60</update_rate>
       <ray>
@@ -44,7 +44,7 @@
       <update_rate>60</update_rate>
       <camera name="left">
 	<!-- x y z em metros e r p y em radianos -->
-	<pose>0.0535 0 0.0314 -1.5708 -1.5708 0</pose> 
+	<pose>0.0535 -0.08935 0.076485 0 0 -1.57075</pose> 
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
           <width>800</width>
@@ -62,7 +62,7 @@
         </noise>
       </camera>
       <camera name="right">
-        <pose>-0.0535 0 0.0314 -1.5708 -1.5708 0</pose>
+        <pose>-0.0535 -0.08935 0.076485 0 0 -1.57075</pose>
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
           <width>800</width>
@@ -109,7 +109,7 @@
       <wheelSeparation>0.2792</wheelSeparation>
       <wheelDiameter>0.065</wheelDiameter>
       <robotBaseFrame>base_link</robotBaseFrame>
-      <torque>10</torque>
+      <torque>3</torque>
       <MaxForce>5.0</MaxForce>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
