@@ -7,7 +7,7 @@
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="4.380" />
-      <inertia ixx="0.000003" ixy="0" ixz="0" iyy="0.000003" iyz="0" izz="0.000005" />
+      <inertia ixx="1.000003" ixy="0" ixz="0" iyy="1.000003" iyz="0" izz="1.000005" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 1.57075" />
