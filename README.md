@@ -40,7 +40,8 @@ $ catkin_make
 ##### 4. Faça o download dos meshes
 
 ```
-Os meshes estão na pasta "Arquivos_Wally_DAE". O nome do mesh pode variar de acordo com a versão do arquivo wally.xacro,  então é recomendável fazer o download de todos e colocar na pasta "meshes".
+Os meshes estão na pasta "Arquivos_Wally_DAE". O nome do mesh pode variar de acordo com a versão do arquivo wally.xacro.
+Então é recomendável fazer o download de todos e colocar na pasta "meshes".
 ```
 [Arquivos_Wally](https://drive.google.com/drive/folders/15dtH_SNdpZNfW_x2lLA208VyzPhk0Tfk?usp=sharing)
 
