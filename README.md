@@ -76,3 +76,4 @@ $ rosrun map_server map_saver -f nomedomapa
 ```sh
 $ roslaunch wally_description gazebo_map_robot.launch 
 ```
+**Para controle e odometria do Wally instale [este](https://github.com/GerbersonFelix/wally_control_odom) pacote.**
