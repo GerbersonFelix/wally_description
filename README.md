@@ -39,15 +39,7 @@ $ cd ..
 $ catkin_make
 ```
 
-##### 4. Faça o download dos meshes
-
-```
-Os meshes estão na pasta "Arquivos_Wally_DAE". O nome do mesh pode variar de acordo com a versão do arquivo wally.xacro.
-Então é recomendável fazer o download de todos e colocar na pasta "meshes".
-```
-[Arquivos_Wally](https://drive.google.com/drive/folders/15dtH_SNdpZNfW_x2lLA208VyzPhk0Tfk?usp=sharing)
-
-##### 5. Abrindo o ambiente de simulação:
+##### 4. Abrindo o ambiente de simulação:
 
 ```sh
 $ cd ~/catkin_ws/
@@ -55,31 +47,31 @@ $ source devel/setup.bash
 $ roslaunch wally_description wally.launch
 ```
 
-##### 6. Para controlar via teclado
+##### 5. Para controlar via teclado
 
 ```sh
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
-##### 7. Para controlar via joystick
+##### 6. Para controlar via joystick
 
 ```sh
 $ rosrun joy joy_node
 $ rosrun teleop_twist_joy teleop_node
 ```
 
-##### 8. Para fazer mapeamento
+##### 7. Para fazer mapeamento
 
 ```sh
 $ roslaunch wally_description gazebo_mapping_robot.launch
 ```
 
-##### 9. Para salvar um mapa
+##### 8. Para salvar um mapa
 
 ```sh
 $ cd ~/catkin_ws/src/wally_description/maps
 $ rosrun map_server map_saver -f nomedomapa
 ```
-##### 10. Para iniciar a simulação com o mapa salvo
+##### 9. Para iniciar a simulação com o mapa salvo
 
 ```sh
 $ roslaunch wally_description gazebo_map_robot.launch 
