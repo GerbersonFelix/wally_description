@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+     <model name="environment_model" static="true">
+      <link name="environment_model_link">
+        <origin pose="0 0 0 0 0 0"/>
+        <collision name="environment_model_collision">
+          <geometry>
+            <mesh filename="package://wally_description/meshes/area_teste.dae" scale="1.0 1.0 1.0"/>
+          </geometry>
+        </collision>
+        <visual name="environment_model_visual" cast_shadows="false">
+          <geometry>
+            <mesh filename="package://wally_description/meshes/area_teste.dae" scale="1.0 1.0 1.0"/>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+  </world>
+</sdf>
