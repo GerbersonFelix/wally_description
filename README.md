@@ -47,36 +47,42 @@ $ source devel/setup.bash
 $ roslaunch wally_description wally.launch
 ```
 
-##### 5. Para controlar via teclado
+##### 5. Para controlar via teclado:
 
 ```sh
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
-##### 6. Para controlar via joystick
+##### 6. Para controlar via joystick:
 
 ```sh
 $ rosrun joy joy_node
 $ rosrun teleop_twist_joy teleop_node
 ```
 
-##### 7. Para fazer mapeamento
+##### 7. Para fazer mapeamento:
 
 ```sh
 $ roslaunch wally_description gazebo_mapping_robot.launch
 ```
 
-##### 8. Para salvar um mapa
+##### 8. Para salvar um mapa:
 
 ```sh
 $ cd ~/catkin_ws/src/wally_description/maps
 $ rosrun map_server map_saver -f nomedomapa
 ```
-##### 9. Para iniciar a simulação com o mapa salvo
+##### 9. Para iniciar a simulação com o mapa salvo:
 
 ```sh
 $ roslaunch wally_description gazebo_map_robot.launch 
 ```
+##### 10. Para iniciar a simulação com o world de teste:
 
-## Aviso
+```sh
+$ roslaunch wally_description gazebo_teste.launch
+```
 
+## Avisos
+
+**Se der erro com algum launch, verificar o caminho dos arquivos dentro do arquivo do launch.**
 **Para controle e odometria do Wally instale [este](https://github.com/GerbersonFelix/wally_control_odom) pacote.**
