@@ -1,6 +1,6 @@
-image: /home/felix/wally-ws/src/wally_description/maps/nomedomapa.pgm
+image: nomedomapa.pgm
 resolution: 0.025000
-origin: [-21.200000, -20.400000, 0.000000]
+origin: [-21.200000, -10.000000, 0.000000]
 negate: 0
 occupied_thresh: 0.65
 free_thresh: 0.196

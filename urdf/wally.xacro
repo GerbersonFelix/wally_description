@@ -99,25 +99,25 @@
   </joint>
   <link name="RP_LIDAR">
     <inertial>
-      <origin xyz="0 0 0.1205" rpy="0 0 0" />
+      <origin xyz="0 0 0.1205" rpy="0 0 -1.57075" />
       <mass value="0.170" />
       <inertia ixx="0.000117046" ixy="0" ixz="0" iyy="0.000076301" iyz="0" izz="0.000082665" />
     </inertial>
     <visual>
-      <origin xyz="0 0 -0.045" rpy="0 0 0" />
+      <origin xyz="0 0 -0.045" rpy="0 0 -1.57075" />
       <geometry>
 	<mesh filename="package://wally_description/meshes/RP_LIDAR.dae" />
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0 0 0.1205" rpy="0 0 0" />
+      <origin xyz="0 0 0.1205" rpy="0 0 -1.57075" />
       <geometry>
 	<mesh filename="package://wally_description/meshes/RP_LIDAR.dae" />
       </geometry>
     </collision>
   </link>
   <joint name="lidar" type="fixed">
-    <origin xyz="0 0 0.1655" rpy="0 0 1.57075" />
+    <origin xyz="0 0 0.1655" rpy="0 0 3.1415" />
     <parent link="base_link" />
     <child link="RP_LIDAR" />
     <axis xyz="0 0 1" />
