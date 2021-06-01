@@ -84,5 +84,5 @@ $ roslaunch wally_description gazebo_teste.launch
 
 ## Avisos
 
-#**Se der erro com algum launch, verificar o caminho dos arquivos dentro do arquivo do launch.**
-#**Para controle e odometria do Wally instale [este](https://github.com/GerbersonFelix/wally_control_odom) pacote.**
+##### **Se der erro com algum launch, verificar o caminho dos arquivos dentro do arquivo do launch.**
+##### **Para controle e odometria do Wally instale [este](https://github.com/GerbersonFelix/wally_control_odom) pacote.**
