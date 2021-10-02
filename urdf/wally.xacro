@@ -122,7 +122,7 @@
     <child link="RP_LIDAR" />
     <axis xyz="0 0 1" />
   </joint>
-  <link name="motor_A">
+  <link name="roda_A">
     <inertial>
       <origin xyz="-0.11168 0 0.021875" rpy="0 0 3.1415" />
       <mass value="0.061" />
@@ -144,10 +144,10 @@
   <joint name="joint_A" type="continuous">
     <origin xyz="0.111681 0 -0.021875" rpy="0 0 0"/>
     <parent link="base_link" />
-    <child link="motor_A" />    
+    <child link="roda_A" />    
     <axis xyz="0 1 0" />
   </joint>
-  <link name="motor_B">
+  <link name="roda_B">
     <inertial>
       <origin xyz="-0.11168 0 -0.021875" rpy="3.1415 0 3.1415" />
       <mass value="0.061" />
@@ -169,10 +169,10 @@
   <joint name="joint_B" type="continuous">
     <origin xyz="0.11168 0 -0.021875" rpy="0 3.1415 0" />
     <parent link="base_link" />
-    <child link="motor_B" />
+    <child link="roda_B" />
     <axis xyz="0 1 0" />
   </joint>
-  <link name="motor_C">
+  <link name="roda_C">
     <inertial>
       <origin xyz="0.11168 0 0.021875" rpy="0 0 0" />
       <mass value="0.061" />
@@ -194,10 +194,10 @@
   <joint name="joint_C" type="continuous">
     <origin xyz="-0.11168 0 -0.021875" rpy="0 0 0" />
     <parent link="base_link" />
-    <child link="motor_C" />
+    <child link="roda_C" />
     <axis xyz="0 1 0" />
   </joint>
-  <link name="motor_D">
+  <link name="roda_D">
     <inertial>
       <origin xyz="0.11168 0 -0.021875" rpy="3.1415 0 0" />
       <mass value="0.061" />
@@ -219,7 +219,7 @@
   <joint name="joint_D" type="continuous">
     <origin xyz="-0.11168 0 -0.021875" rpy="0 0 0" />
     <parent link="base_link" />
-    <child link="motor_D" />
+    <child link="roda_D" />
     <axis xyz="0 1 0" />
   </joint>
     <link name="Arduino_Due">
