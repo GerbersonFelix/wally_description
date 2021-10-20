@@ -131,13 +131,13 @@
     <visual>
       <origin xyz="-0.11168 0 0.021875" rpy="0 0 3.1415" />
       <geometry>
-	<mesh filename="package://wally_description/meshes/RODA_A.dae" />
+	<mesh filename="package://wally_description/meshes/RODA.dae" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="-0.11168 0 0.021875" rpy="0 0 3.1415" />
       <geometry>
-	<mesh filename="package://wally_description/meshes/RODA_A.dae" />
+	<mesh filename="package://wally_description/meshes/RODA.dae" />
       </geometry>
     </collision>
   </link>
@@ -156,13 +156,13 @@
     <visual>
       <origin xyz="-0.11168 0 -0.021875" rpy="3.1415 0 3.1415" />
       <geometry>
-	<mesh filename="package://wally_description/meshes/RODA_A.dae" />
+	<mesh filename="package://wally_description/meshes/RODA.dae" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="-0.11168 0 -0.021875" rpy="3.1415 0 3.1415" />
       <geometry>
-	<mesh filename="package://wally_description/meshes/RODA_A.dae" />
+	<mesh filename="package://wally_description/meshes/RODA.dae" />
       </geometry>
     </collision>
   </link>
@@ -181,13 +181,13 @@
     <visual>
       <origin xyz="0.11168 0 0.021875" rpy="0 0 0" />
       <geometry>
-	<mesh filename="package://wally_description/meshes/RODA_A.dae" />
+	<mesh filename="package://wally_description/meshes/RODA.dae" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0.11168 0 0.021875" rpy="0 0 0" />
       <geometry>
-	<mesh filename="package://wally_description/meshes/RODA_A.dae" />
+	<mesh filename="package://wally_description/meshes/RODA.dae" />
       </geometry>
     </collision>
   </link>
@@ -206,13 +206,13 @@
     <visual>
       <origin xyz="0.11168 0 -0.021875" rpy="3.1415 0 0" />
       <geometry>
-	<mesh filename="package://wally_description/meshes/RODA_A.dae" />
+	<mesh filename="package://wally_description/meshes/RODA.dae" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0.11168 0 -0.021875" rpy="3.1415 0 0" />
       <geometry>
-	<mesh filename="package://wally_description/meshes/RODA_A.dae" />
+	<mesh filename="package://wally_description/meshes/RODA.dae" />
       </geometry>
     </collision>
   </link>

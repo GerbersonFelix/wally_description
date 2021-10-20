@@ -18,15 +18,11 @@
         </scan>
         <range>
           <min>0.10</min>
-          <max>30.0</max>
+          <max>12.0</max>
           <resolution>0.01</resolution>
         </range>
         <noise>
           <type>gaussian</type>
-          <!-- Noise parameters based on published spec for Hokuyo laser
-               achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
-               stddev of 0.01m will put 99.7% of samples within 0.03m of the true
-               reading. -->
           <mean>0.0</mean>
           <stddev>0.01</stddev>
         </noise>
@@ -47,8 +43,8 @@
 	<pose>0.0535 -0.08935 0.076485 0 0 -1.57075</pose> 
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
-          <width>800</width>
-          <height>800</height>
+          <width>1280</width>
+          <height>720</height>
           <format>R8G8B8</format>
         </image>
         <clip>
@@ -65,8 +61,8 @@
         <pose>-0.0535 -0.08935 0.076485 0 0 -1.57075</pose>
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
-          <width>800</width>
-          <height>800</height>
+          <width>1280</width>
+          <height>720</height>
           <format>R8G8B8</format>
         </image>
         <clip>
@@ -86,7 +82,6 @@
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
         <frameName>zed</frameName>
-        <!--rightFrameName>right_camera_optical_frame</rightFrameName-->
         <hackBaseline>0.0535</hackBaseline>
         <distortionK1>0.0</distortionK1>
         <distortionK2>0.0</distortionK2>
@@ -109,8 +104,8 @@
       <wheelSeparation>0.2792</wheelSeparation>
       <wheelDiameter>0.065</wheelDiameter>
       <robotBaseFrame>base_link</robotBaseFrame>
-      <torque>3</torque>
-      <MaxForce>5.0</MaxForce>
+      <torque>2</torque>
+      <MaxForce>5.2</MaxForce>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
